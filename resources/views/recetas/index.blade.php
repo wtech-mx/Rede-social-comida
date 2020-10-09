@@ -25,14 +25,28 @@
                         <td> {{$receta->titulo}} </td>
                         <td>  {{$receta->categoria->nombre}} </td>
                         <td>
-                            <a href="" class="btn btn-danger mr-1">Eliminar</a>
-                            <a href="" class="btn btn-dark mr-1">Editar</a>
-                            <a href="{{route('recetas.show',['receta' => $receta->id])}}" class="btn btn-info mr-1">Ver</a>
+
+                            <form action="{{ route('recetas.destroy',['receta' => $receta->id])}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+
+                                <button type="button" class="btn btn-sm btn-danger mr-1" data-toggle="modal" data-target="#exampleModalCenter">
+                                  Eliminar &times;
+                                </button>
+
+                                @include('recetas.modal')
+
+                                <a href="{{route('recetas.edit',['receta' => $receta->id])}}" class="btn btn-sm btn-dark mr-1">Editar</a>
+                                <a href="{{route('recetas.show',['receta' => $receta->id])}}" class="btn btn-sm btn-info mr-1">Ver</a>
+
+                            </form>
                         </td>
                     </tr>
                 @endforeach
             </tbody>
         </table>
     </div>
+
+
 
 @endsection
