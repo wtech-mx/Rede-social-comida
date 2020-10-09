@@ -20,12 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="677166a7-b37c-44da-855f-c99b15d75b46" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/recetas/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RecetaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RecetaController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Receta.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Receta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/recetas/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/recetas/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/recetas/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/recetas/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +185,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602166251895</updated>
       <workItem from="1602166253028" duration="5854000" />
-      <workItem from="1602176283298" duration="22270000" />
+      <workItem from="1602176283298" duration="25450000" />
     </task>
     <servers />
   </component>
@@ -199,10 +205,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="500" y="439" key="NewPhpFileDialog" timestamp="1602185952028">
+    <state x="500" y="439" key="NewPhpFileDialog" timestamp="1602205366718">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="500" y="439" key="NewPhpFileDialog/0.0.2560.1040/-2560.0.2560.1040@0.0.2560.1040" timestamp="1602185952028" />
+    <state x="500" y="439" key="NewPhpFileDialog/0.0.2560.1040/-2560.0.2560.1040@0.0.2560.1040" timestamp="1602205366718" />
     <state x="166" y="165" key="SettingsEditor" timestamp="1602167880891">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -211,9 +217,9 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="374" y="237" width="583" height="566" key="find.popup/0.0.2560.1040/-2560.0.2560.1040@0.0.2560.1040" timestamp="1602197524361" />
-    <state x="328" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1602191178780">
+    <state x="328" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1602205107900">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="328" y="229" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/-2560.0.2560.1040@0.0.2560.1040" timestamp="1602191178780" />
+    <state x="328" y="229" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/-2560.0.2560.1040@0.0.2560.1040" timestamp="1602205107900" />
   </component>
 </project>
