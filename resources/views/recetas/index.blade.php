@@ -3,6 +3,8 @@
 @section('botones')
 
     <a href="{{  route('recetas.create') }}" class="btn btn-success text-white">Crear Receta</a>
+    <a href="{{  route('perfiles.edit',['perfil'=>$usuario->id]) }}" class="btn btn-info text-white">Editar perfil</a>
+    <a href="{{  route('perfiles.show',['perfil'=>$usuario->id]) }}" class="btn btn-dark text-white">Ver perfil</a>
 
 @endsection
 

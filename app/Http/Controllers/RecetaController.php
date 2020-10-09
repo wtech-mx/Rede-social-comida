@@ -26,10 +26,10 @@ class RecetaController extends Controller
 
         $categoria = CategoriaReceta::all(['id','nombre']);
 
-
+        $usuario = Auth::user();
         $recetas = Auth::user()->Recetas;
 
-        return view('recetas.index',compact('recetas'));
+        return view('recetas.index',compact('recetas','usuario'));
     }
 
     /**
