@@ -38,5 +38,7 @@ class User extends Authenticatable
     ];
 
     //Relacion  1:n  de Uusario a Recetas
-
+    public function Recetas(){
+        return $this->hasMany(Receta::class);
+    }
 }

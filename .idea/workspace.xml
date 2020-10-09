@@ -20,19 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="677166a7-b37c-44da-855f-c99b15d75b46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/recetas/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Rede-social-comida.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Rede-social-comida.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RecetaController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RecetaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RecetaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Receta.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Receta.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/recetas/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/recetas/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/recetas/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/recetas/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +179,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602166251895</updated>
       <workItem from="1602166253028" duration="5854000" />
-      <workItem from="1602176283298" duration="18489000" />
+      <workItem from="1602176283298" duration="22270000" />
     </task>
     <servers />
   </component>

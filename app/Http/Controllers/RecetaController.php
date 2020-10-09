@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\CategoriaReceta;
 use App\Receta;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -21,7 +22,14 @@ class RecetaController extends Controller
      */
     public function index()
     {
-        return view('recetas.index');
+        //Auth::user()->Recetas->dd();
+
+        $categoria = CategoriaReceta::all(['id','nombre']);
+
+
+        $recetas = Auth::user()->Recetas;
+
+        return view('recetas.index',compact('recetas'));
     }
 
     /**
@@ -33,7 +41,11 @@ class RecetaController extends Controller
     {
         //DB::table('categoria_recetas')->get()->pluck('nombre','id')->dd();
 
-        $categorias = DB::table('categoria_recetas')->get()->pluck('nombre','id');
+        //Obtener las categorias (sin modelo)
+        //$categorias = DB::table('categoria_recetas')->get()->pluck('nombre','id');
+
+        //con Modelo
+        $categorias = CategoriaReceta::all(['id','nombre']);
 
         return view('recetas.create',compact('categorias'));
     }
@@ -60,15 +72,24 @@ class RecetaController extends Controller
         $ruta_imagen = $request['imagen']->store('upload-recetas', 'public');
 
         $img = Image::make( public_path("storage/{$ruta_imagen}"))->fit(1000, 550);
-
         $img->save();
 
-        DB::table('recetas')->insert([
+//        DB::table('recetas')->insert([
+//            'titulo' => $data['titulo'],
+//            'preparacion' => $data['preparacion'],
+//            'ingredientes' => $data['ingredientes'],
+//            'imagen' => $ruta_imagen,
+//            'user_id' => Auth::user()->id,
+//            'categoria_id' => $data['categoria'],
+//        ]);
+
+        // Almacenar en Db con Model
+
+        auth()->user()->Recetas()->create([
             'titulo' => $data['titulo'],
             'preparacion' => $data['preparacion'],
             'ingredientes' => $data['ingredientes'],
             'imagen' => $ruta_imagen,
-            'user_id' => Auth::user()->id,
             'categoria_id' => $data['categoria'],
         ]);
 
