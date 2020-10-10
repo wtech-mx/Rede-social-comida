@@ -13,7 +13,7 @@ class RecetaController extends Controller
 
 {
     public function __construct(){
-        $this->middleware('auth',['excep' => 'show']);
+        $this->middleware('auth',['excep' => 'show','search']);
     }
     /**
      * Display a listing of the resource.
@@ -22,14 +22,17 @@ class RecetaController extends Controller
      */
     public function index()
     {
-        //Auth::user()->Recetas->dd();
 
-        $categoria = CategoriaReceta::all(['id','nombre']);
+        // auth()->user()->recetas->dd();
+        // $recetas = auth()->user()->recetas->paginate(2);
 
-        $usuario = Auth::user();
-        $recetas = Auth::user()->Recetas;
+        $usuario = auth()->user();
+
+        // Recetas con paginación
+        $recetas = Receta::where('user_id', $usuario->id)->paginate(3);
 
         return view('recetas.index',compact('recetas','usuario'));
+
     }
 
     /**
@@ -116,6 +119,8 @@ class RecetaController extends Controller
      */
     public function edit(Receta $receta)
     {
+        $this->authorize('view',$receta);
+
         $categorias = CategoriaReceta::all(['id','nombre']);
         return view('recetas.edit',compact('categorias','receta'));
     }
@@ -175,5 +180,18 @@ class RecetaController extends Controller
         $receta->delete();
 
         return redirect()->action('RecetaController@index');
+    }
+
+    public function search(Request $request)
+    {
+        //$busqueda = $request['nuscar'];
+        $busqueda = $request->get('buscar');
+
+        $recetas = Receta::where('titulo','like','%'. $busqueda. '%')->paginate(1);
+
+        $recetas->appends(['buscar' => $busqueda]);
+
+        return view('busquedas.show',compact('recetas','busqueda'));
+
     }
 }

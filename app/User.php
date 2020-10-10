@@ -59,4 +59,10 @@ class User extends Authenticatable
     {
         return $this->hasOne(Perfil::class);
     }
+
+    public function Megusta()
+    {
+        return $this->belongsToMany(User::class,'likes_receta');
+    }
+
 }

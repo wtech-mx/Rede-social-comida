@@ -47,6 +47,9 @@
                 @endforeach
             </tbody>
         </table>
+        <div class="col-12 justify-content-center mt-4">
+            {{$recetas->links()}}
+        </div>
     </div>
 
 

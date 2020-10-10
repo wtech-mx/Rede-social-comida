@@ -20,16 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="677166a7-b37c-44da-855f-c99b15d75b46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/perfiles/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/perfiles/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/busquedas/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/categorias/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/inicio/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/ui/receta.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PerfilController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PerfilController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RecetaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RecetaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/RecetaPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/RecetaPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Receta.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Receta.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CategoriasSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CategoriasSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UsuarioSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsuarioSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/perfiles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/perfiles/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/recetas/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/recetas/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/recetas/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/recetas/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +193,8 @@
       <updated>1602166251895</updated>
       <workItem from="1602166253028" duration="5854000" />
       <workItem from="1602176283298" duration="32908000" />
-      <workItem from="1602252809357" duration="11537000" />
+      <workItem from="1602252809357" duration="25747000" />
+      <workItem from="1602301889497" duration="7674000" />
     </task>
     <servers />
   </component>
@@ -205,21 +214,26 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="500" y="439" key="NewPhpFileDialog" timestamp="1602262693108">
+    <state x="500" y="439" key="NewPhpFileDialog" timestamp="1602310565513">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="500" y="439" key="NewPhpFileDialog/0.0.2560.1040/-2560.0.2560.1040@0.0.2560.1040" timestamp="1602262693108" />
+    <state x="500" y="439" key="NewPhpFileDialog/0.0.2560.1040/-2560.0.2560.1040@0.0.2560.1040" timestamp="1602310565513" />
     <state x="166" y="165" key="SettingsEditor" timestamp="1602167880891">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="166" y="165" key="SettingsEditor/0.0.2560.1040/-2560.0.2560.1040@0.0.2560.1040" timestamp="1602167880891" />
-    <state x="374" y="237" width="583" height="566" key="find.popup" timestamp="1602197524361">
+    <state x="374" y="237" width="583" height="566" key="find.popup" timestamp="1602306309627">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="374" y="237" width="583" height="566" key="find.popup/0.0.2560.1040/-2560.0.2560.1040@0.0.2560.1040" timestamp="1602197524361" />
-    <state x="328" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1602205107900">
+    <state x="374" y="237" width="583" height="566" key="find.popup/0.0.2560.1040/-2560.0.2560.1040@0.0.2560.1040" timestamp="1602306309627" />
+    <state x="936" y="240" key="run.anything.popup" timestamp="1602277214943">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="328" y="229" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/-2560.0.2560.1040@0.0.2560.1040" timestamp="1602205107900" />
+    <state x="936" y="240" key="run.anything.popup/0.0.2560.1040/-2560.0.2560.1040@0.0.2560.1040" timestamp="1602277214943" />
+    <state x="328" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1602311008889">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="-2232" y="229" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/-2560.0.2560.1040@-2560.0.2560.1040" timestamp="1602288549839" />
+    <state x="328" y="229" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/-2560.0.2560.1040@0.0.2560.1040" timestamp="1602311008889" />
   </component>
 </project>
