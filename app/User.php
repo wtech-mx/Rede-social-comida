@@ -49,7 +49,7 @@ class User extends Authenticatable
     }
 
     /** Relación 1:n de Usuario a Recetas */
-    public function Recetas()
+    public function Receta()
     {
         return $this->hasMany(Receta::class);
     }

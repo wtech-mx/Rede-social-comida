@@ -22,16 +22,15 @@
 
             <p>
                 <span class="font-weight-bold text-primary">Autor: </span>
-                <a href="{{route('perfiles.show',['perfil' => $receta->autor->id])}}">
-                     {{$receta->autor->name}}
+                <a href="{{route('perfiles.show',['perfil' => $receta->User->id])}}">
+                         {{$receta->User->Receta[0]->Like }}
                 </a>
-
             </p>
+             <p>{{count($receta->Like)}} Les gusto</p>
         </div>
 
         <div class="fecha">
             <h2 class="my-3 text-primary">Fecha: </h2>
-
             @php
                 $originalDate = $receta->created_at;
                 $newDate = date("d/m/Y", strtotime($originalDate));

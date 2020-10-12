@@ -11,18 +11,19 @@ class Receta extends Model
         'titulo', 'preparacion', 'ingredientes','imagen','categoria_id',
     ];
 
-    public function Categoria(){
+    public function Categoria()
+    {
         return $this->belongsTo(CategoriaReceta::class);
     }
 
     //obtiene la info del user via fk
-    public function Autor(){
-        return $this->belongsTo(User::class,'user_id');
+    public function User(){
+        return $this->belongsTo(User::class);
     }
 
-    public function Likes()
+    public function Like()
     {
-        return$this->belongsToMany(User::class,'likes_receta');
+        return$this->hasMany(Like::class);
     }
 
 }

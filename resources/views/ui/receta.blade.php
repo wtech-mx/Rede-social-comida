@@ -12,7 +12,7 @@
                                                 $newDate = date("d/m/Y", strtotime($originalDate));
                                             @endphp
                                             {{$newDate}}
-                                            <p>{{count($receta->likes)}} Les gusto</p>
+                                            <p>{{count($receta->Like)}} Les gusto</p>
                                          </div>
                                             <p  style="font-size: 15px"> {{Str::words(strip_tags($receta->preparacion),20)}}</p>
                                             <a href="{{route('recetas.show',['receta'=>$receta->id])}}" class="btn btn-primary d-block text-uppercase">Ver receta</a>

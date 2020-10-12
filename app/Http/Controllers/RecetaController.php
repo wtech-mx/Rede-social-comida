@@ -106,8 +106,12 @@ class RecetaController extends Controller
      * @param  \App\Receta  $receta
      * @return \Illuminate\Http\Response
      */
-    public function show(Receta $receta)
+    public function show( Request $request, $receta_id)
     {
+        $receta = Receta::findOrFail($receta_id);
+
+
+
         return view('recetas.show',compact('receta'));
     }
 
